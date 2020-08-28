@@ -34,10 +34,15 @@ export class AppComponent {
     direction: 'horizontal',
     slidesPerView: 1,
     keyboard: true,
-    mousewheel: true,
+    //mousewheel: true,
+    mousewheel: {
+      invert: false,
+    },
     scrollbar: false,
     navigation: true,
     pagination: false,
+    loop: true,
+    effect: 'fade',
   };
 
   private scrollbar: SwiperScrollbarInterface = {

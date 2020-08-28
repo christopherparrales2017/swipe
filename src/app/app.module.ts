@@ -8,6 +8,8 @@ import {
   SWIPER_CONFIG,
 } from 'ngx-swiper-wrapper';
 import { AppComponent } from './app.component';
+import { CardSwipeComponent } from './components/card-swipe/card-swipe.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
@@ -19,7 +21,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 };
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CardSwipeComponent, MenuComponent],
   imports: [SwiperModule, BrowserModule, FlexLayoutModule],
   providers: [
     {
